@@ -246,8 +246,14 @@ export class ViewportManager {
           }
         }
       }
+      // ==========================================
+      // ★ 4. 新增：智能隐藏无用的 2D 拖拽柄并动态缩放
+      // ==========================================
+      if (this.sm.updateGizmoVisibility) {
+        this.sm.updateGizmoVisibility(name, camera)
+      }
 
-      // 4. 防止视图形变
+      // 5. 防止视图形变
       const aspect = vp.w / vp.h
       if (camera.isOrthographicCamera) {
         const halfH = (camera.top - camera.bottom) / 2
