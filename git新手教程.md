@@ -139,6 +139,17 @@ origin  https://github.com/xiaoming/my-project.git (push)
 
 ---
 
+## 第四.五步
+首先应确认当前所在分支：
+```bash
+git branch
+```
+
+如果没有 main，可以创建并切换：
+```bash
+git checkout -b main
+```
+
 ## 第五步：写代码，然后上传到 GitHub
 
 这是你以后**每天都在重复**的操作，一共三步，记住一个口诀：
@@ -196,6 +207,7 @@ git push -u origin main
 > git push
 > ```
 > 因为 `-u` 已经帮你记住了绑定关系。
+> 如果这一步报错了请看第四点五步
 
 ### 完整的三连操作（以后每天都在用）
 
